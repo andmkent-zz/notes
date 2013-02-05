@@ -50,3 +50,24 @@ You're driving over a hill. What is your constant force as you go over the top?
    - mg is bigger due to gravity AND centripedal force towards center of hill/circle
    - a = v^2 / R = sum of forces / mass = (mg - n) / m
      => mg - n = mv^2 / R => n = mg - (mv^2) / R
+
+
+Air resistance = R = -bv
+
+
+Suppose you want to build an oval race track. It has semi-circular turns w/ radius 100 m.
+
+What must be banking of these turns before cars traveling at 100 m/s to take turn at full speed w/o relying on friction to keep them on the track?
+
+mg pulling down
+
+F_c pushing up, perp to track
+
+    - has component parellel to mg and perp to gravity
+      - the component parallel to gravity causes acceleration
+      - solving for theta
+      - theta is angle of perp to gravity side
+      - f_x (perp to grav) = sin (theta) * F_c
+      - f_y (parallel w/ grav) = cos (theta) * F_c
+      - f_y = mg => because there is no acc. in this direction
+      - F_c ^2 = f_x^2 + f_y^2 then solve
