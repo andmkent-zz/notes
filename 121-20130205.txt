@@ -1,0 +1,52 @@
+Test - Ch 1 - 6
+
+friction force = mu_s * normal_force
+	 normal force = mass_of_obj * g
+
+	 so... mu_s == coefficient of static friction
+
+	 solving for mu_s shows minimum value to hold mass still
+
+
+
+* * * * EXAMPLE - box on a hill
+
+Box of mass m on board at angle theta with coefficient of friction mu_k
+
+we'll use cords oriented to be aligned with ramp (y perp and up, x parallel)
+
+gravity is pulling straight down with force mg
+
+normal force acting up, perp. to ramp
+
+Divide gravity into its components
+       - one pulling perpendicular and down (mg cos (theta))
+       - one pulling down the ramp (mg sin (theta))
+       	 - this component is what is accelarating it
+
+
+	- acceleration == sum of forces divided by mass
+	  - sum of forces of normal and perp down force == 0 
+	  - x direction = )mg*sin(theta) - friction) / m
+	  - friction force = mu_k * normal force
+	  - normal force = mg*cos(theta)
+
+
+ficticious force == force w/ no reasonable Newton's 3rd Law
+	   - i.e. Newton's laws use intertial reference frames
+
+
+
+* * EXAMPLE
+
+You're driving over a hill. What is your constant force as you go over the top?
+ R = 100 m, v=72 km/h, g = 10m/s^2, m = 75 kg
+
+ - R is the radius of the circle that fits the curve at the tip of the hill
+
+ - Forces in free body diagram
+   - gravity = downward = mg
+   - normal force or contact force = n
+   - mg is bigger due to gravity AND centripedal force towards center of hill/circle
+   - a = v^2 / R = sum of forces / mass = (mg - n) / m
+     => mg - n = mv^2 / R => n = mg - (mv^2) / R
