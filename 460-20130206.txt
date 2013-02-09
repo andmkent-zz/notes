@@ -1,0 +1,27 @@
+
+
+Lab 2
+    - simulate UDP over link with 2 nodes
+    - call bind/connect etc to set it up
+    - when you send packets, it actually goes through
+      your simulator
+    - rides accross our links from lab 1
+    - How does Node know about socket?
+      - Node can have function to create socket
+      - Or call socket, pass it a ptr to Node instance
+      - it MUST go through your link
+    - Last schedule on packet path recvfrom(...)
+    - just do, when message comes, have them receive it
+    - Connect means I only want to hear from / rx from that person
+
+
+
+
+Selective Repeat Overview
+	  - Sender keeps a window of packets
+	    - same as Go-Back-N
+	  - selective ACKs
+	    - ACKS only sequence number n
+	  - Selective repeat
+	    - sender keeps a timer for each packet
+	    - timout (n): retransmit packet n only 

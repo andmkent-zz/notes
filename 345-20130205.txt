@@ -1,0 +1,61 @@
+
+Delta Clock
+      - is essentially a heap (or sorted queue)
+
+
+
+Passing info from processes
+	> find . | grep .svn | xargs rm -rf
+	  - passes stdout to stdin of next
+
+
+Situation
+	- two threads want to print
+	- printer can only talk to one thread at a time
+	- shared mem communication
+	One option:
+
+	while(lock);
+	  lock = 1;
+	  // talk to printer
+	  lock = 0;
+
+	- won't work, both can enter
+
+Race Condition
+     - two threads accessing same memory and correctness depends on order
+
+Mutual Exclusion
+       - No two threads may simultaneously be inside critical regions
+       - deadlock free
+       - starvation free
+
+
+Blocking types
+	 - busy wait / spin lock
+	 - sleep / blocked queue
+
+
+
+Implementation
+	disabling interrupts
+		  - disable_ints();
+		  // do critical section code
+		  - enable_ints();
+	 	  --- bad in generaly, really bad on multi-processors
+
+	strict alternation
+	       - while(turn!=0)
+			//critical
+			turn = 1
+
+		- other guy does the opposite
+		- words for mutual exclusion, but not starvation
+
+		
+
+Algorithmic Solutions
+	    - LockOne
+	      - flag array (flag per process)
+	      	- volatile keyword array
+		  - volatile disallows read/write order moving 
